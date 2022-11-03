@@ -6,28 +6,42 @@ body {
 main {
   outline: 5px solid black;
   background-color: white;
-  margin: 80px 50px 0;
-}
-
-nav {
-  outline: 5px solid red;
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  gap: 100px;
 }
 
 /* Sidokolumn */
 aside {
-  outline: 5px solid green;
-  float: right;
+  background-color: rgb(30, 113, 103);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+img {
+  border-radius: 50%;
+  border: 5px solid black;
+  margin: 0 auto;
+  display: block;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.work-title {
+  text-align: center;
+  border-bottom: 3px solid black;
+  padding-bottom: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.sidebar-info {
+  margin: 50px;
+}
+
+a {
+  color: black;
 }
 
 /* sammanfattning */
@@ -43,4 +57,10 @@ aside {
 /* utbildning */
 .third {
   outline: 5px solid orange;
+}
+
+@media screen and (min-width: 1024px) {
+  aside {
+    float: left;
+  }
 }
