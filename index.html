@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style/style.css" type="text/css" />
     <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
     <script
@@ -27,62 +33,167 @@
         <div class="sidebar-info">
           <h2>Kontaktinformation</h2>
 
-          <p><i class="fa-solid fa-phone"> </i>070 - 269 97 42</p>
-          <p><i class="fa-regular fa-envelope"></i>m-dahlquist@hotmail.com</p>
-          <p><i class="fa-solid fa-location-dot"></i>Nygatan 37B, Linköping</p>
+          <ul>
+            <li><i class="fa-solid fa-phone"></i>070 - 269 97 42</li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>m-dahlquist@hotmail.com
+            </li>
+            <li><i class="fa-solid fa-location-dot"></i>Linköping</li>
+          </ul>
 
-          <a href="https://github.com/malinlena"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <i class="fa-brands fa-linkedin"></i>
-          <h2>Kunskaper</h2>
-          <h2>Kort om mig</h2>
+          <div class="links">
+            <a href="https://github.com/malinlena" aria-label="Github"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/malin-dahlquist"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <h2>Kompetenser</h2>
+          <div class="progress-bar">
+            <p>HTML</p>
+            <progress value="80" max="100">80%</progress>
+          </div>
+          <div class="progress-bar">
+            <p>CSS</p>
+            <progress value="60" max="100">80%</progress>
+          </div>
+          <div class="progress-bar">
+            <p>SASS</p>
+            <progress value="20" max="100">80%</progress>
+          </div>
+        </div>
+      </aside>
+
+      <div class="content">
+        <section class="first">
+          <h2>Om mig</h2>
           <p>
             Jag är en lugn och strukturerad person som trivs att arbeta både i
             grupp och ensam. Jag trivs bäst på jobbet när jag känner att jag kan
             bidra med något och samtidigt utvecklas.
           </p>
-        </div>
-      </aside>
-
-      <section class="first">
-        <h2>Sammanfattning</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </section>
-      <section class="second">
-        <h2>Arbetslivserfarenhet</h2>
-        <p>
-          Kontorsföretaget i Sverige - Personalchef 2014 Lorem ipsum dolor, sit
-          amet consectetur adipisicing elit. Quis ex ea dignissimos mollitia non
-          maxime nisi blanditiis omnis
-        </p>
-        <p>
-          Kontorsföretaget i Sverige 2 - Personalchef 2013 Lorem ipsum dolor,
-          sit amet consectetur adipisicing elit. Quis ex ea dignissimos mollitia
-          non maxime nisi blanditiis omnis
-        </p>
-      </section>
-      <section class="third">
-        <h2>Utbildning</h2>
-        <p>Medieinstitutet - Front End Developer 2022-10 - 2024-06</p>
-        <p>NTI-skolan - Webbutveckling 1 2022-03-28 - 2022-04-29</p>
-        <p>
-          Anders Ljungstedts Gymnasium – Hud, Skönhet och hälsa 2014-01 -
-          2015-06 Utbildning inom spaterapeut och nagelterapeut samt fördjupning
-          nagelterapeut.
-        </p>
-        <p>Vimmerby Gymnasium - Hotell- och restaurang 2009-08 - 2012-06</p>
-      </section>
+        </section>
+        <section class="second">
+          <h2>Arbetslivserfarenhet</h2>
+          <div class="experience-contents">
+            <div class="exp-left">
+              <p class="exp-company-name">Postnord</p>
+              <p class="exp-time-period">2019-2022</p>
+            </div>
+            <div class="exp-right">
+              <p class="exp-position">Brevbärare</p>
+              <p class="exp-desc">
+                Arbetat både heltid och deltid samt extra i Linköping samt i
+                Stockholm.
+              </p>
+            </div>
+          </div>
+          <div class="experience-contents">
+            <div class="exp-left">
+              <p class="exp-company-name">Adecco AB</p>
+              <p class="exp-time-period">2017-2018</p>
+            </div>
+            <div class="exp-right">
+              <p class="exp-position">Teamleader reception/konferens</p>
+              <p class="exp-desc">
+                Jobbade som teamleader i reception samt konferens. Ansvarade
+                över receptionspersonalen samt fördelade det dagliga arbetet.
+                Arbetsuppgifter som ingick var bland annat, boka mötesrum, svara
+                i telefon, ta emot kunder samt servera mat till och städa
+                möteslokaler.
+              </p>
+            </div>
+          </div>
+          <div class="experience-contents">
+            <div class="exp-left">
+              <p class="exp-company-name">Åhléns City</p>
+              <p class="exp-time-period">2016-2018</p>
+            </div>
+            <div class="exp-right">
+              <p class="exp-position">Säljande nagelterapeut</p>
+              <p class="exp-desc">
+                Arbetade som säljare på skönhetsavdelningen med inriktning
+                naglar, samt utförde expressmanikyrer på kunder.
+              </p>
+            </div>
+          </div>
+          <div class="experience-contents">
+            <div class="exp-left">
+              <p class="exp-company-name">Pizza Hut AB</p>
+              <p class="exp-time-period">2016</p>
+            </div>
+            <div class="exp-right">
+              <p class="exp-position">Serveringspersonal</p>
+              <p class="exp-desc">
+                Servering av både a la carte samt buffé i Linköping samt i
+                Stockholm.
+              </p>
+            </div>
+          </div>
+          <div class="experience-contents">
+            <div class="exp-left">
+              <p class="exp-company-name">NTM Distribution AB</p>
+              <p class="exp-time-period">2012-2015</p>
+            </div>
+            <div class="exp-right">
+              <p class="exp-position">Distributör</p>
+              <p class="exp-desc">
+                Jobbade extra som tidningsdistributör främst på helger samt
+                hoppade in extra vid sjukskrivning.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="third">
+          <h2>Utbildning</h2>
+          <div class="education-contents">
+            <div class="education-left">
+              <p class="education-school-name">Medieinstitutet</p>
+              <p class="educationp-time-period">2022-2024</p>
+            </div>
+            <div class="education-right">
+              <p class="education-subject">Front End Developer</p>
+              <p class="education-desc">Beskrivning av utbildning</p>
+            </div>
+          </div>
+          <div class="education-contents">
+            <div class="education-left">
+              <p class="education-school-name">NTI-Skolan</p>
+              <p class="educationp-time-period">2022</p>
+            </div>
+            <div class="education-right">
+              <p class="education-subject">Webbutveckling 1</p>
+              <p class="education-desc">Beskrivning av utbildning</p>
+            </div>
+          </div>
+          <div class="education-contents">
+            <div class="education-left">
+              <p class="education-school-name">Anders Ljungstedts Gymnasium</p>
+              <p class="educationp-time-period">2014-2015</p>
+            </div>
+            <div class="education-right">
+              <p class="education-subject">Hud, Skönhet och Hälsa</p>
+              <p class="education-desc">
+                Utbildning inom spaterapeut och nagelterapeut samt fördjupning
+                nagelterapeut.
+              </p>
+            </div>
+          </div>
+          <div class="education-contents">
+            <div class="education-left">
+              <p class="education-school-name">Vimmerby Gymnasium</p>
+              <p class="educationp-time-period">2009-2012</p>
+            </div>
+            <div class="education-right">
+              <p class="education-subject">Hotell- och restaurang</p>
+              <p class="education-desc">Beskrivning av utbildning</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>
