@@ -1,18 +1,64 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+/* 
+html,
+body,
+main {
+  height: 100vh;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   background-color: #d6dbdf;
+  margin-top: 70px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1b2631;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+nav ul li {
+  padding: 1px;
+  font-size: 0.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d6dbdf;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 2.5em;
+}
+
+p {
+  color: #34495e;
+  font-size: 1.5em;
 }
 
 /* Sidokolumn */
 aside {
   background-color: #34495e;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 40px;
+  padding: 30px 10px 30px;
+  margin: 0 40px;
 }
 
 img {
@@ -51,6 +97,11 @@ aside h2 {
   font-size: 1.8em;
 }
 
+aside p {
+  color: #d6dbdf;
+  font-size: 1.2em;
+}
+
 .content {
   margin: 50px;
 }
@@ -65,17 +116,24 @@ a {
 }
 
 li {
+  display: flex;
   list-style-type: none;
   color: #d6dbdf;
   font-size: 1em;
   white-space: nowrap;
+  align-items: center;
 }
 
 i {
   color: #1b2631;
-  margin-right: 20px;
   padding: 5px;
   font-size: 1.4em;
+}
+
+li i {
+  min-width: 35px;
+  display: flex !important;
+  justify-content: center;
 }
 
 ul {
@@ -94,21 +152,125 @@ progress {
 
 /* sammanfattning */
 .first {
-  outline: 5px solid blue;
+  /* outline: 5px solid blue; */
 }
 
 /* arbetslivserfarenhet */
 .second {
-  outline: 5px solid yellow;
+  /* outline: 5px solid yellow; */
+}
+
+.experience-contents {
+  margin-bottom: 40px;
+}
+
+.exp-company-name {
+  color: #21638f;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.exp-time-period {
+  font-size: 1.3em;
+}
+
+.exp-position {
+  color: #2e86c1;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.exp-desc {
+  border-left: 3px solid #a5a3a3;
+  padding-left: 10px;
+}
+
+.second p {
+  margin: 5px 0;
 }
 
 /* utbildning */
 .third {
-  outline: 5px solid orange;
+  /* outline: 5px solid orange; */
+}
+
+.education-contents {
+  margin-bottom: 40px;
+}
+
+.education-school-name {
+  color: #21638f;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.education-time-period {
+  font-size: 1.3em;
+}
+
+.education-subject {
+  color: #2e86c1;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.education-desc {
+  border-left: 3px solid #a5a3a3;
+  padding-left: 10px;
+}
+
+.third p {
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+}
+
+.fa-arrow-up-long {
+  font-size: 1em;
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    background-color: #1b2631;
+    height: 100%;
+  }
+
+  main {
+    background-color: #d6dbdf;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 100%;
+  }
+
   aside {
     float: left;
+    height: 100%;
+    margin: 0;
+    margin-right: 40px;
+    padding: 10px;
+    padding-bottom: 1000px;
+  }
+
+  .experience-contents,
+  .education-contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .first {
+    padding-top: 40px;
+  }
+  h2 {
+    font-size: 3em;
+  }
+
+  .second {
+    padding-top: 10px;
+  }
+
+  footer {
+    padding-bottom: 30px;
   }
 }

@@ -20,6 +20,13 @@
   </head>
   <body>
     <main>
+      <nav>
+        <ul>
+          <li><a href="#first">Om mig</a></li>
+          <li><a href="#second">Erfarenheter</a></li>
+          <li><a href="#third">Utbildning</a></li>
+        </ul>
+      </nav>
       <aside>
         <img
           src="/images/malin-doris.jpg"
@@ -54,30 +61,36 @@
           <h2>Kompetenser</h2>
           <div class="progress-bar">
             <p>HTML</p>
-            <progress value="80" max="100">80%</progress>
+            <progress value="80" max="100"></progress>
           </div>
           <div class="progress-bar">
             <p>CSS</p>
-            <progress value="60" max="100">80%</progress>
+            <progress value="60" max="100"></progress>
           </div>
           <div class="progress-bar">
             <p>SASS</p>
-            <progress value="20" max="100">80%</progress>
+            <progress value="20" max="100"></progress>
           </div>
         </div>
       </aside>
 
       <div class="content">
-        <section class="first">
+        <section class="first" id="first">
           <h2>Om mig</h2>
           <p>
-            Jag är en lugn och strukturerad person som trivs att arbeta både i
-            grupp och ensam. Jag trivs bäst på jobbet när jag känner att jag kan
-            bidra med något och samtidigt utvecklas.
+            Jag heter Malin Dahlquist och studerar Front End Developer på
+            Medieinstitutet. Jag söker LIA till hösten 2023. Som person är jag
+            lugn och strukturerad och jag trivs bra att arbeta både i grupp och
+            ensam. Jag trivs bäst på jobbet när jag känner att jag kan bidra med
+            något och samtidigt utvecklas.
+          </p>
+          <p>
+            Jag har en bakgrund inom restaurang och servicebranchen samt
+            utbildning inom skönhet och hälsa.
           </p>
         </section>
-        <section class="second">
-          <h2>Arbetslivserfarenhet</h2>
+        <section class="second" id="second">
+          <h2>Erfarenheter</h2>
           <div class="experience-contents">
             <div class="exp-left">
               <p class="exp-company-name">Postnord</p>
@@ -147,32 +160,34 @@
             </div>
           </div>
         </section>
-        <section class="third">
+        <section class="third" id="third">
           <h2>Utbildning</h2>
           <div class="education-contents">
             <div class="education-left">
               <p class="education-school-name">Medieinstitutet</p>
-              <p class="educationp-time-period">2022-2024</p>
+              <p class="education-time-period">2022-2024</p>
             </div>
             <div class="education-right">
               <p class="education-subject">Front End Developer</p>
-              <p class="education-desc">Beskrivning av utbildning</p>
+              <p class="education-desc">
+                Yrkeshögskoleutbildning distans Front End Developer
+              </p>
             </div>
           </div>
           <div class="education-contents">
             <div class="education-left">
               <p class="education-school-name">NTI-Skolan</p>
-              <p class="educationp-time-period">2022</p>
+              <p class="education-time-period">2022</p>
             </div>
             <div class="education-right">
               <p class="education-subject">Webbutveckling 1</p>
-              <p class="education-desc">Beskrivning av utbildning</p>
+              <p class="education-desc">Kurs i HTML och CSS</p>
             </div>
           </div>
           <div class="education-contents">
             <div class="education-left">
               <p class="education-school-name">Anders Ljungstedts Gymnasium</p>
-              <p class="educationp-time-period">2014-2015</p>
+              <p class="education-time-period">2014-2015</p>
             </div>
             <div class="education-right">
               <p class="education-subject">Hud, Skönhet och Hälsa</p>
@@ -185,14 +200,19 @@
           <div class="education-contents">
             <div class="education-left">
               <p class="education-school-name">Vimmerby Gymnasium</p>
-              <p class="educationp-time-period">2009-2012</p>
+              <p class="education-time-period">2009-2012</p>
             </div>
             <div class="education-right">
               <p class="education-subject">Hotell- och restaurang</p>
-              <p class="education-desc">Beskrivning av utbildning</p>
+              <p class="education-desc">
+                Restaurangutbildning med inriktning servering.
+              </p>
             </div>
           </div>
         </section>
+        <footer>
+          <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
+        </footer>
       </div>
     </main>
   </body>
