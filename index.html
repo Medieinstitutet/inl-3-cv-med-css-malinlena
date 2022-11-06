@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="CV - Malin Dahlquist" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,7 +12,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style/style.css" type="text/css" />
-    <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
     <script
       src="https://kit.fontawesome.com/523ed7040a.js"
       crossorigin="anonymous"
@@ -23,53 +23,76 @@
       <nav>
         <ul>
           <li><a href="#first">Om mig</a></li>
-          <li><a href="#second">Erfarenheter</a></li>
+          <li><a href="#second">Erfarenhet</a></li>
           <li><a href="#third">Utbildning</a></li>
         </ul>
       </nav>
       <aside>
         <img
-          src="/images/malin-doris.jpg"
+          src="images/malin-doris.jpg"
           alt="Malin Dahlquist och hunden Doris"
           title="Profilbild"
-          height="300px"
-          width="300px"
+          height="300"
+          width="300"
         />
         <h1>Malin Dahlquist</h1>
         <h2 class="work-title">Front End Developer</h2>
         <div class="sidebar-info">
-          <h2>Kontaktinformation</h2>
+          <h2>Kontakt</h2>
 
-          <ul>
-            <li><i class="fa-solid fa-phone"></i>070 - 269 97 42</li>
+          <ul class="contact">
             <li>
-              <i class="fa-regular fa-envelope"></i>m-dahlquist@hotmail.com
+              <a href="tel:0702699742">
+                <i class="fa-solid fa-phone"></i>070 - 269 97 42
+              </a>
             </li>
-            <li><i class="fa-solid fa-location-dot"></i>Linköping</li>
+            <li>
+              <a href="mailto:m-dahlquist@hotmail.com">
+                <i class="fa-regular fa-envelope"></i>m-dahlquist@hotmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://goo.gl/maps/HuUsde6Ew6qhXR4y6">
+                <i class="fa-solid fa-location-dot"></i>Linköping
+              </a>
+            </li>
           </ul>
 
           <div class="links">
-            <a href="https://github.com/malinlena" aria-label="Github"
-              ><i class="fa-brands fa-github"></i
-            ></a>
+            <a href="https://github.com/malinlena" aria-label="Github">
+              <i class="fa-brands fa-github"></i>
+            </a>
             <a
               href="https://www.linkedin.com/in/malin-dahlquist"
               aria-label="LinkedIn"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
           <h2>Kompetenser</h2>
           <div class="progress-bar">
             <p>HTML</p>
-            <progress value="80" max="100"></progress>
+            <progress
+              value="80"
+              max="100"
+              aria-label="kompetens HTML"
+            ></progress>
           </div>
           <div class="progress-bar">
             <p>CSS</p>
-            <progress value="60" max="100"></progress>
+            <progress
+              value="60"
+              max="100"
+              aria-label="kompetens CSS"
+            ></progress>
           </div>
           <div class="progress-bar">
             <p>SASS</p>
-            <progress value="20" max="100"></progress>
+            <progress
+              value="20"
+              max="100"
+              aria-label="kompetens SASS"
+            ></progress>
           </div>
         </div>
       </aside>
@@ -170,7 +193,7 @@
             <div class="education-right">
               <p class="education-subject">Front End Developer</p>
               <p class="education-desc">
-                Yrkeshögskoleutbildning distans Front End Developer
+                Yrkeshögskoleutbildning distans Front End Developer.
               </p>
             </div>
           </div>
@@ -181,7 +204,7 @@
             </div>
             <div class="education-right">
               <p class="education-subject">Webbutveckling 1</p>
-              <p class="education-desc">Kurs i HTML och CSS</p>
+              <p class="education-desc">Kurs i HTML och CSS.</p>
             </div>
           </div>
           <div class="education-contents">
@@ -211,7 +234,9 @@
           </div>
         </section>
         <footer>
-          <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a>
+          <a href="#" aria-label="tillbaka">
+            <i class="fa-solid fa-arrow-up-long"></i>
+          </a>
         </footer>
       </div>
     </main>

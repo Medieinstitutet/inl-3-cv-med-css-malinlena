@@ -70,8 +70,7 @@ pre {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -128,24 +127,24 @@ select {
 }
 
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -166,23 +165,23 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox],
-[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -260,7 +259,6 @@ aside p {
 }
 
 .content h2 {
-  position: -webkit-sticky;
   position: sticky;
   top: 72px;
   background-color: #d6dbdf;
@@ -391,6 +389,7 @@ footer {
     background-color: #1b2631;
     height: 100%;
   }
+
   main {
     background-color: #d6dbdf;
     margin-left: 50px;
@@ -399,9 +398,11 @@ footer {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
   }
+
   nav ul li {
     font-size: 0.5em;
   }
+
   aside {
     float: left;
     margin: 0;
@@ -409,33 +410,40 @@ footer {
     padding: 10px;
     grid-column: span 2;
   }
+
   .content {
     margin: 0;
     padding: 10px;
     grid-column: span 5;
   }
+
   .experience-contents,
-.education-contents {
+  .education-contents {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-right: 50px;
   }
+
   .first {
     padding-top: 40px;
   }
+
   h2 {
     font-size: 3em;
   }
+
   .second {
     padding-top: 10px;
   }
+
   footer {
     padding-bottom: 30px;
   }
 }
+
 @media screen and (min-width: 1700px) {
   main {
     margin-left: 200px;
     margin-right: 200px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
