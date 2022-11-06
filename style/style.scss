@@ -260,7 +260,7 @@ aside p {
 
 .content h2 {
   position: sticky;
-  top: 72px;
+  top: 56px;
   background-color: #d6dbdf;
 }
 
@@ -415,6 +415,10 @@ footer {
     margin: 0;
     padding: 10px;
     grid-column: span 5;
+  }
+
+  .content h2 {
+    top: 72px;
   }
 
   .experience-contents,
